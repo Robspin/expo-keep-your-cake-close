@@ -18,13 +18,15 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.robspin.keepyourcakeclose"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/cake-splash.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.robspin.keepyourcakeclose"
     },
     "web": {
       "favicon": "./assets/favicon.png"

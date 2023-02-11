@@ -1,4 +1,4 @@
-import { useEffect, useState, Suspense } from "react"
+import { useEffect, useState } from "react"
 import { Asset } from 'expo-asset'
 import { useFrame } from '@react-three/fiber'
 import { loadObjAsync } from 'expo-three'
@@ -20,10 +20,11 @@ const Cake = (props: any) => {
                 await assetMtl.downloadAsync()
 
                 const obj = await loadObjAsync({ asset: assetModel.uri, mtlAsset: assetMtl.uri })
-                obj.scale.x = 0.6
-                obj.scale.y = 0.6
-                obj.scale.z = 0.6
-                obj.position.y = -1.5
+                obj.scale.x = 1
+                obj.scale.y = 1
+                obj.scale.z = 1
+                obj.rotation.x = 0.6
+                obj.position.y = -1
                 loadObj(obj)
             } catch (e) {
                 console.log(e)
@@ -31,11 +32,7 @@ const Cake = (props: any) => {
         })()
     }, [])
 
-    return (
-        <Suspense>
-            {obj && <primitive object={obj}/>}
-        </Suspense>
-    )
+    return obj && <primitive object={obj}/>
 }
 
 export default Cake
