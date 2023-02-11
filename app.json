@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "expo-keep-your-cake-close",
-    "slug": "expo-keep-your-cake-close",
+    "name": "keep-your-cake-close",
+    "slug": "keep-your-cake-close",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/favicon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/cake-splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -22,7 +22,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/cake-splash.png",
         "backgroundColor": "#FFFFFF"
       }
     },
